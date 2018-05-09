@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Successfuly Updated
+{% endblock %}
+
+{% block main %}
+<div class="alert alert-success" role="alert">
+    <p>Profile updated!</p>
+    <p>Name: {{fname}} {{lname}}</p>
+    <p>Phone: {{phone}}</p>
+    <p>Address: {{street}} {{city}} {{zipcode}}</p>
+    <p>Email: {{email}}</p>
+</div>
+{% endblock %}

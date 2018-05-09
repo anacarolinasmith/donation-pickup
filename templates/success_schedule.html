@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Successfully Scheduled
+{% endblock %}
+
+{% block main %}
+<div class="alert alert-success" role="alert">
+  <p>Scheduled!</p>
+  <p>We will pick up your donation item(s) at {{street}} {{city}} {{zipcode}}.</p>
+</div>
+{% endblock %}

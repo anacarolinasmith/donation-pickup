@@ -1,0 +1,71 @@
+/** Styles from CS50 Finance **/
+
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .green
+{
+    color: #218838;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+
+/** Adittional styles **/
+
+#map {
+
+    /* specify height for map*/
+    height: 30rem;
+}
+
+.nav-item {
+    /* style navigation items' border*/
+    border-right-style: groove;
+}
+
+#endnav {
+    /* turn off style of border on the far end*/
+    border-style: none;
+}
+
+
+.title {
+    /* add space on the bottom of title*/
+    margin-bottom: 2rem;
+    /* add space on the top of title*/
+    margin-top: 2rem;
+}
+
+h1 {
+    /* make sure all titles are green*/
+    color: #218838;
+}
+
+

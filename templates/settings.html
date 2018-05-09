@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<div class="title">
+    <h1>Profile Settings</h1>
+    <p>Update your information.</p>
+</div>
+<form action="/settings" method="post">
+    <div class="form-group">
+    <label for="street">City:</label>
+    <input class="form-control" name="city" placeholder="City" type="text">
+    </div>
+
+    <div class="form-group">
+    <label for="street">Street:</label>
+    <input class="form-control" name="street" placeholder="Street" type="text">
+    </div>
+
+    <div class="form-group">
+    <label for="zipcode">Zipcode:</label>
+    <input class="form-control" name="zipcode" placeholder="Zipcode" type="text">
+    </div>
+
+    <div class="form-group">
+    <label for="zipcode">Phone:</label>
+    <input class="form-control" name="phone" placeholder="Phone" type="tel">
+    </div>
+
+    <div class="form-group">
+    <label for="email">Email:</label>
+    <input class="form-control" name="email" placeholder="Email" type="email">
+    </div>
+
+    <div class="form-group">
+    <label for="password">Password:</label>
+    <input class="form-control" name="password" placeholder="Password" type="password">
+    </div>
+
+    <div class="form-group">
+    <label for="password">Confirm Password:</label>
+    <input class="form-control" name="confirmation" placeholder="Confirm Password" type="password">
+    </div>
+
+    <button class="btn btn-success" type="submit">Update</button>
+</form>
+{% endblock %}

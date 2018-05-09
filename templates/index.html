@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="title">
+        <h1>Welcome, {{name}}!</div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-sm">
+            <div class="card" style="width: 19.5rem;">
+                <img class="card-img-top" src="static/abcalphabet-letter-p.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Schedule a Pickup</h4>
+                        <p class="card-text">When should we pick up your donation?</p>
+                        <a href="/schedule" class="btn btn-success">Schedule</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 19.5rem;">
+                <img class="card-img-top" src="static/abcalphabet-letter-h.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">History</h4>
+                        <p class="card-text">Check out your past pickup requests.</p>
+                        <a href="/history" class="btn btn-success">History</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 19.5rem;">
+                <img class="card-img-top" src="static/abcalphabet-letter-d.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Drop off</h4>
+                        <p class="card-text">Drop off at one of our Locations in Massachusetts.</p>
+                        <a href="/locations" class="btn btn-success">Locations</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
